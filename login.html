@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--created by Michael Brewer
+Oct.9,2020
+micbrewe@uat.edu-->
+<html>
+    <head>
+        <!--this links the .js file with the code in it-->
+        <script src="UATBlastoffcode.js"></script>
+        <title>
+            UATSpace Login Page
+        </title>
+    </head>
+    <body>
+        <h1>
+            <!--these are the welcome and introduction to input login text lines-->
+            Welcome to the UATSpace login Page!
+        </h1>
+        <h2>
+            Login Status
+        </h2>
+        <!--this tells user their login status-->
+        <p id="loginStatus">Awaiting Credentials...</p>
+        <!--this is wher the user will input their information to login-->
+        <form onsubmit="return false">
+            First Name: <input type="text" id="fname"><br>
+            Last Name:  <input type="text" id="lname"><br>
+            Badge Number:   <input type="number" id="badgeID"><br>
+            <input type="submit" onclick="checkCred();" />
+        </form>
+    </body>
+</html>
